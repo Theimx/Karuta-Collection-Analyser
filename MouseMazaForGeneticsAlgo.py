@@ -2,24 +2,24 @@ import pygame
 import sys
 import math
 
-# Initialisation de PyGame
+
 pygame.init()
 
-# Définir les dimensions de la fenêtre et des cubes
-WIDTH, HEIGHT = 600, 600  # Taille de la fenêtre
-ROWS, COLS = 30, 30  # Nombre de lignes et colonnes
-CUBE_SIZE = WIDTH // COLS  # Taille de chaque cube
 
-# Couleurs
+WIDTH, HEIGHT = 600, 600  
+ROWS, COLS = 30, 30  
+CUBE_SIZE = WIDTH // COLS 
+
+
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 RED = (255, 0, 0)
 
-# Créer la fenêtre
-win = pygame.display.set_mode((WIDTH, HEIGHT),pygame.NOFRAME)
-pygame.display.set_caption("Mouse and Borders Simulation")
 
-# Grille textuelle
+win = pygame.display.set_mode((WIDTH, HEIGHT),pygame.NOFRAME)
+pygame.display.set_caption("Mouse Maze")
+
+
 text_grid = [
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "X############################X",
@@ -64,22 +64,22 @@ class Mouse:
     def __init__(self, x, y):
         self.x = x
         self.y = y
-        self.speed = 0  # Vitesse initiale
-        self.direction = 0  # Angle en degrés
+        self.speed = 0  
+        self.direction = 0  
         self.radius = 5
 
     def update(self, accel, turn):
-        # Update speed and direction
+
         self.speed += accel
-        self.speed = max(-1, min(1, self.speed))  # Limiter la vitesse entre -1 et 1
+        self.speed = max(-1.5, min(1.5, self.speed))  
         self.direction += turn
         rad = math.radians(self.direction)
 
-        # Update position
-        self.x += self.speed * math.cos(rad)
-        self.y -= self.speed * math.sin(rad)  # y-axis is inverted in pygame
 
-        # Keep mouse within window bounds
+        self.x += self.speed * math.cos(rad)
+        self.y -= self.speed * math.sin(rad)  
+
+
         self.x = max(self.radius, min(WIDTH - self.radius, self.x))
         self.y = max(self.radius, min(HEIGHT - self.radius, self.y))
 
@@ -104,7 +104,7 @@ def main():
     mouse = Mouse(WIDTH // 2, HEIGHT // 2)
     borders = []
 
-    # Créer les objets Border en fonction de la grille textuelle
+
     for row in range(ROWS):
         for col in range(COLS):
             if text_grid[row][col] == 'X':
@@ -116,7 +116,6 @@ def main():
                 pygame.quit()
                 sys.exit()
 
-        # Gestion des touches
         keys = pygame.key.get_pressed()
         accel = 0
         turn = 0
@@ -129,20 +128,20 @@ def main():
         elif keys[pygame.K_RIGHT]:
             turn = -2
 
-        # Mettre à jour la souris
+
         mouse.update(accel, turn)
 
-        # Vérifier les collisions
+
         mouse_rect = mouse.get_rect()
         for border in borders:
             if mouse_rect.colliderect(border.rect):
                 print("Collision detected!")
-                # Réinitialiser la position de la souris pour simplifier la gestion des collisions
+
                 mouse.x, mouse.y = WIDTH // 2, HEIGHT // 2
                 mouse.speed = 0
                 mouse.direction = 0
 
-        # Dessiner la grille, les bordures et la souris
+
         win.fill(WHITE)
         draw_grid(win, text_grid)
         for border in borders:
