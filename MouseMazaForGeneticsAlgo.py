@@ -2,24 +2,18 @@ import pygame
 import sys
 import math
 
-# Initialisation de PyGame
 pygame.init()
 
-# Définir les dimensions de la fenêtre et des cubes
-WIDTH, HEIGHT = 600, 600  # Taille de la fenêtre
-ROWS, COLS = 30, 30  # Nombre de lignes et colonnes
-CUBE_SIZE = WIDTH // COLS  # Taille de chaque cube
 
-# Couleurs
+WIDTH, HEIGHT = 600, 600  
+ROWS, COLS = 30, 30  
+CUBE_SIZE = WIDTH // COLS 
+
 WHITE = (255, 255, 255)
 BLACK = (0, 0, 0)
 RED = (255, 0, 0)
 
-# Créer la fenêtre
-win = pygame.display.set_mode((WIDTH, HEIGHT))
-pygame.display.set_caption("Mouse and Borders Simulation")
 
-# Grille textuelle
 text_grid = [
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
     "X############################X",
@@ -52,6 +46,9 @@ text_grid = [
     "X############################X",
     "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
 ]
+
+win = pygame.display.set_mode((WIDTH, HEIGHT),pygame.NOFRAME)
+pygame.display.set_caption("Mouse and Borders Simulation")
 
 class Border:
     def __init__(self, x, y):
@@ -149,7 +146,7 @@ class Mouse:
         if intersects:
             return min(intersects, key=lambda point: (point[0] - x1) ** 2 + (point[1] - y1) ** 2)
         return None
-
+    
 def draw_grid(win, text_grid):
     for row in range(ROWS):
         for col in range(COLS):
@@ -219,3 +216,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+def World():
+    a = 0
