@@ -12,22 +12,22 @@ How to use :
 Result :   
  
 ---------------------------------------------------------------------------------
- 
-Theimx.csv
- 
------ Statistiques --------------------------------------------------------------
-39330  Gold (Total Gold, Total Burn Value of the Collection )
-104716  Whishlist (Total Whishlist )
- 
------ Tickets -------------------------------------------------------------------
-75  Tickets ( Values of the Frames applied in the collection )
-15 Tickets (In gold, Total burn value in tickets)
-578 Tickets : Value of every card of the collection (Based on Print,Edition and Whishlist)
- 
-653   Tickets (Card + Frame Value)
- 
------ Top 20 Most Valuable Cards (Without frames ) -------------------------------
-
+    
+Theimx.csv   
+    
+----- Statistiques --------------------------------------------------------------   
+39330  Gold (Total Gold, Total Burn Value of the Collection )   
+104716  Whishlist (Total Whishlist )   
+    
+----- Tickets -------------------------------------------------------------------   
+75  Tickets ( Values of the Frames applied in the collection )   
+15 Tickets (In gold, Total burn value in tickets)   
+578 Tickets : Value of every card of the collection (Based on Print,Edition and Whishlist)   
+    
+653   Tickets (Card + Frame Value)   
+    
+----- Top 20 Most Valuable Cards (Without frames ) -------------------------------   
+   
 - v1kdxww, Ryuuko Matoi, Kill La Kill, 37 Tickets
 - v1kdgc4, Ryuuko Matoi, Kill La Kill, 37 Tickets
 - vpdxlxj, Nezuko Kamado, Demon Slayer: Kimetsu no Yaiba, 26 Tickets
@@ -47,11 +47,11 @@ Theimx.csv
 - vz83nvb, Taiga Aisaka, Toradora!, 8 Tickets
 - v4gv877, Rin Itoshi, Blue Lock, 8 Tickets
 - vmt7tnx, Gyro Zeppeli, JoJo's Bizarre Adventure: Steel Ball Run, 7 Tickets
-
----------------------------------------------------------------------------------
-All the frames'values are not in the software yet so your collection can be worth more than the price tell here.
+   
+---------------------------------------------------------------------------------   
+All the frames'values are not in the software yet so your collection can be worth more than the price tell here.   
 Frames :  ['labpunk', 'snowfire', 'jinglebells', 'jinglebells', 'yearofthesheep', 'yearoftherabbit', 'yearofthesheep', 'abandonedchurch', 'yearofthedragon', 'mingvase', 'yearofthesnake', 'solisfairstand', 'springrain', 'yearoftheboar', 'yearofthedragon', 'inwonderland', 'yearoftheox', 'springrain', 'ripple', 'yearofthehorse', 'yearofthesnake', 'yearofthedog', 'yearoftherooster']
-
-Special Print :
-Code : vjc781r Print : 8 Edition : 3 : Souta Saeki Ryman's Club
-Code : v2w300c Print : 8 Edition : 2 : Shiori Goshiki A Galaxy Next Door   
+   
+Special Print :   
+Code : vjc781r Print : 8 Edition : 3 : Souta Saeki Ryman's Club   
+Code : v2w300c Print : 8 Edition : 2 : Shiori Goshiki A Galaxy Next Door     
