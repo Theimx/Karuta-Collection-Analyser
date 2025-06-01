@@ -4,4 +4,4 @@ Software Version : 1.0
 AI : No AI used   
    
 Description :   
-A fully functional application to manage and analyze your Karuta card collection from Discord.   
+A fully functional software to get statistics on your Karuta card collection from the Discord bot Karuta.   
