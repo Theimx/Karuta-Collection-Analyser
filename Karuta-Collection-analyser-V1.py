@@ -1,6 +1,6 @@
 import csv
 
-fileToAnalyse = "Theimx.csv"
+fileToAnalyse = r"Theimx.csv"
 
 frames = []
 wl = 0
