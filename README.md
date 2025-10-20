@@ -9,5 +9,5 @@ A software to get statistics on your Karuta card collection from the Discord bot
    
 ---
 ### *How to use* :   
-- Fill the variable line 3 with the path of the CSV file of your collection.
+- Fill the variable **line 3** with the path of the CSV file of your collection.
 ---
