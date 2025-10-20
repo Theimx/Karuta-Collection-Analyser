@@ -7,5 +7,6 @@
 ### *Description* :   
 A software to get statistics on your Karuta card collection from the Discord bot Karuta.   
 ---
-How to use :   
+### *How to use* :   
 - Fill the variable line 3 with the path of the CSV file of your collection.
+---
